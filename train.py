@@ -72,8 +72,8 @@ def main():
 
     model = LogisticRegression(C=args.C, max_iter=args.max_iter).fit(x_train, y_train)
     
-    os.makedirs('outputs', exists_ok=True)
-    joblib.dump(value=model, filename='outputs/hyperdrive_model.joblib')
+    os.makedirs('./outputs', exists_ok=True)
+    joblib.dump(value=model, filename='./outputs/hyperdrive_model.joblib')
 
     accuracy = model.score(x_test, y_test)
     run.log("Accuracy", np.float(accuracy))
