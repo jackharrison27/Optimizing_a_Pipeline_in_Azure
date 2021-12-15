@@ -40,4 +40,4 @@ This model is then compared to an Azure AutoML run.
 
 
 ## Proof of cluster clean up
-![alt text](https://github.com/jackharrison27/[Optimizing_a_Pipeline_in_Azure]/blob/[master]/delete_cluster.jpg?raw=true)
+![alt text](https://github.com/jackharrison27/[Optimizing_a_Pipeline_in_Azure]/blob/[master]/delete_cluster.png?raw=true)
