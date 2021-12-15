@@ -34,7 +34,10 @@ This model is then compared to an Azure AutoML run.
 ## Future work
 **What are some areas of improvement for future experiments? Why might these improvements help the model?**
 
+**The first thing I noticed was the imbalanced nature of the dataset we used. The model could be improved by either balancing the classes or changing the metric to something else, like AUC. This would help the model by giving the training a equal amounts of each class which would mitigate overfitting of one class.**
+
+**Regarding the Hyperdrive logistic regression, we could add more or re-tune the hyperparameters to expand the space of values or hone down to more accurate values. This would help the model by increasing model accuracy by fine-tuning the hyperparameters.**
+
 
 ## Proof of cluster clean up
-**If you did not delete your compute cluster in the code, please complete this section. Otherwise, delete this section.**
-**Image of cluster marked for deletion**
+**See image**
