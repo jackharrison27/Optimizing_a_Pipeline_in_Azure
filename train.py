@@ -18,14 +18,6 @@ file_path = 'https://automlsamplenotebookdata.blob.core.windows.net/automl-sampl
 
 ds = TabularDatasetFactory.from_delimited_files(path=file_path)
 
-x, y = clean_data(ds)
-
-# TODO: Split data into train and test sets.
-
-x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.30)
-
-run = Run.get_context()
-
 
 def clean_data(data):
     # Dict for cleaning data
@@ -55,6 +47,15 @@ def clean_data(data):
     y_df = x_df.pop("y").apply(lambda s: 1 if s == "yes" else 0)
     
     return x_df, y_df
+
+x, y = clean_data(ds)
+
+# TODO: Split data into train and test sets.
+
+x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.30)
+
+run = Run.get_context()
+
 
 
 def main():
